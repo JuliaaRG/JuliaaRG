@@ -1,0 +1,106 @@
+html, body 
+{
+	height: 100%;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a
+{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+
+
+/* SIDEBAR */
+
+.sidebar 
+{
+	float: left;
+	width: 350px;
+    height: 100%;
+    background-color: #e35d6a;
+}
+.sidebar > h1, h2, h3, h4, h5, h6, p
+{
+    color: #ffffff;
+    text-align: justify;
+}
+.rounded-circle
+{
+    overflow:hidden;
+    border-radius: 50%;
+    max-width: 70%;
+    box-shadow: 1px 1px 12px #555;
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.divider
+{
+    background-color: #ffff;
+    height: 40px;
+    margin-top: 40px;
+}
+.divider h2
+{
+    color: #e35d6a;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+i
+{
+    margin-right: 5px;
+}
+
+.contact h4
+{
+    margin-left: 30px;
+}
+
+
+
+/* MAIN CONTENT*/
+
+#info
+{
+	float: right;
+	width: 500px;
+    background-color: #c39797;
+}
+
+.heading h1
+{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.heading h2
+{
+    font-weight: 400;
+}
+
+.heading h1, h2
+{
+    letter-spacing: 1.2px;
+}
+
+.underline
+{
+    border-bottom: 1.5px solid #e35d6a;
+}
+
+
+/* FOOTER */
+
+.footer 
+{
+	position: absolute;
+	width: 750px;
+	bottom: 0;
+	left: 10px;
+}
