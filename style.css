@@ -1,28 +1,33 @@
 html, body 
 {
 	height: 100%;
-	margin: 0;
+    margin: 0 135px 0 135px;
 }
 
 h1, h2, h3, h4, h5, h6, p, a
 {
     font-family: 'Lato', sans-serif;
+    color: #404040;
     letter-spacing: 1px;
     font-weight: 300;
 }
 
-
+#contenu
+{
+    display: flex;
+    min-height: 100%;
+    border: 1px solid black;
+}
 
 /* SIDEBAR */
 
-.sidebar 
-{
-	float: left;
-	width: 350px;
-    height: 100%;
-    background-color: #e35d6a;
+#sidebar 
+{ 
+    max-width: 35%;
+    min-height: 100%;
+    background-color: #008080;
 }
-.sidebar > h1, h2, h3, h4, h5, h6, p
+#sidebar > h1, h2, h3, h4, h5, h6, p
 {
     color: #ffffff;
     text-align: justify;
@@ -40,13 +45,13 @@ h1, h2, h3, h4, h5, h6, p, a
 }
 .divider
 {
-    background-color: #ffff;
+    background-color: #e7f3f3;
     height: 40px;
     margin-top: 40px;
 }
 .divider h2
 {
-    color: #e35d6a;
+    color: #008080;
     line-height: 40px;
     text-align: center;
     font-weight: bold;
@@ -69,19 +74,27 @@ i
 
 #info
 {
-	float: right;
-	width: 500px;
-    background-color: #c39797;
+    width: 65%;
+    background-color: #e7f3f3;
+}
+
+.heading
+{
+   margin: 100px 0 0 60px;
 }
 
 .heading h1
 {
-    font-size: 35px;
+    font-size: 40px;
     text-transform: uppercase;
+    margin-bottom: 5px;
 }
 .heading h2
 {
+    font-size: 30px;
     font-weight: 400;
+    color: #404040;
+    margin-top: 5px;
 }
 
 .heading h1, h2
@@ -91,7 +104,7 @@ i
 
 .underline
 {
-    border-bottom: 1.5px solid #e35d6a;
+    border-bottom: 1.5px solid #008080;
 }
 
 
