@@ -1,7 +1,30 @@
 html, body 
 {
 	height: 100%;
-    margin: 0 135px 0 135px;
+    margin: 0px 130px 0px 130px;
+}
+
+/* RESPONSIVE RULES*/
+@media screen and (max-width:1024px)
+{
+    html,body
+    {
+        margin: 0px;
+        width: auto;
+    }
+    .email
+    {
+        word-wrap: break-word;
+    }
+    #contenu
+    {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #sidebar, #info
+    {
+        min-width: 100%;
+    }
 }
 
 h1, h2, h3, h4, h5, h6, p, a
@@ -15,9 +38,11 @@ h1, h2, h3, h4, h5, h6, p, a
 #contenu
 {
     display: flex;
+    width: 100%;
     min-height: 100%;
     border: 1px solid black;
 }
+
 
 /* SIDEBAR */
 
@@ -67,6 +92,27 @@ i
 {
     margin-left: 30px;
 }
+
+
+/* SIDEBAR HOBBIES */
+
+.hobbies p 
+{
+    display: inline;
+    margin-left: 10px;
+}
+.hobbies
+{
+   
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+
+
 
 
 
