@@ -5,27 +5,43 @@ html, body
 }
 
 /* RESPONSIVE RULES*/
-@media screen and (max-width:1024px)
+
+@media screen and (max-width:1280px)
 {
     html,body
     {
         margin: 0px;
         width: auto;
     }
-    .email
+    .profile-picture img
     {
-        word-wrap: break-word;
+        max-width: 40%;
     }
     #contenu
     {
         flex-wrap: wrap;
         flex-direction: column;
+        
     }
     #sidebar, #info
     {
         min-width: 100%;
+        width: auto;
     }
+    #info
+    {
+        display: flex;
+    }
+    .heading
+    {
+        margin: auto;
+        justify-content: center;
+    }
+ 
 }
+
+
+/* GENERAL */
 
 h1, h2, h3, h4, h5, h6, p, a
 {
@@ -42,7 +58,6 @@ h1, h2, h3, h4, h5, h6, p, a
     min-height: 100%;
     border: 1px solid black;
 }
-
 
 /* SIDEBAR */
 
@@ -93,27 +108,40 @@ i
     margin-left: 30px;
 }
 
+/* SIDEBAR ABOUT*/
+
+.about p
+{
+    margin: 30px 30px 140px 30px;
+}
+
 
 /* SIDEBAR HOBBIES */
 
-.hobbies p 
+#hobbies
 {
-    display: inline;
-    margin-left: 10px;
+    display: flex;
+    justify-content: center;
 }
+.hobby-icon
+{
+    flex-direction: row;
+    margin: 20px 20px;
+}
+/*
 .hobbies
 {
    
     text-align: center;
+    margin: auto;
+    
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
+    
 }
-
-
-
-
+*/
 
 
 /* MAIN CONTENT*/
@@ -143,7 +171,7 @@ i
     margin-top: 5px;
 }
 
-.heading h1, h2
+.heading h1, .heading h2
 {
     letter-spacing: 1.2px;
 }
