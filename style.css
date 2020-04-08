@@ -1,7 +1,35 @@
+
+/* GENERAL */
+
 html, body 
 {
 	height: 100%;
     margin: 0px 130px 0px 130px;
+}
+
+h1,h2,h3,h4,h5,h6,p,a 
+{
+    font-family: 'Lato', sans-serif;
+    color: #404040;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.about p
+{
+    text-align: justify;
+}
+#contenu
+{
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    border: 1px solid black;
+}
+
+#about-block
+{
+    min-height: 60%;
+    max-height: 60%;
 }
 
 /* RESPONSIVE RULES*/
@@ -41,36 +69,23 @@ html, body
 }
 
 
-/* GENERAL */
-
-h1, h2, h3, h4, h5, h6, p, a
-{
-    font-family: 'Lato', sans-serif;
-    color: #404040;
-    letter-spacing: 1px;
-    font-weight: 300;
-}
-
-#contenu
-{
-    display: flex;
-    width: 100%;
-    min-height: 100%;
-    border: 1px solid black;
-}
 
 /* SIDEBAR */
 
 #sidebar 
 { 
     max-width: 35%;
-    min-height: 100%;
     background-color: #008080;
 }
-#sidebar > h1, h2, h3, h4, h5, h6, p
+
+#sidebar h4, #sidebar p
 {
     color: #ffffff;
     text-align: justify;
+}
+.sidebar
+{
+    display: flex;
 }
 .rounded-circle
 {
@@ -103,6 +118,10 @@ i
     margin-right: 5px;
 }
 
+.contact
+{
+    flex: 1 1 0;
+}
 .contact h4
 {
     margin-left: 30px;
@@ -110,9 +129,13 @@ i
 
 /* SIDEBAR ABOUT*/
 
+.about
+{
+    flex: 2 1 0;
+}
 .about p
 {
-    margin: 30px 30px 140px 30px;
+    margin: 30px 30px auto 30px;
 }
 
 
@@ -123,47 +146,35 @@ i
     display: flex;
     justify-content: center;
 }
-.hobby-icon
-{
-    flex-direction: row;
-    margin: 20px 20px;
-}
-/*
 .hobbies
 {
-   
-    text-align: center;
-    margin: auto;
-    
-    margin-top: 40px;
+    flex: 1 1 0;
+}
+.hobby-icon
+{
+    display: block;
+    flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
-    
+    border: 2px solid #e7f3f3;
+    padding: 11px 11px;
+    border-radius: 100%;
 }
-*/
-
 
 /* MAIN CONTENT*/
 
-#info
+.title
 {
-    width: 65%;
-    background-color: #e7f3f3;
+    margin: 100px 0 120px 60px;
 }
 
-.heading
-{
-   margin: 100px 0 0 60px;
-}
-
-.heading h1
+.title h1
 {
     font-size: 40px;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
-.heading h2
+.title h2
 {
     font-size: 30px;
     font-weight: 400;
@@ -171,7 +182,7 @@ i
     margin-top: 5px;
 }
 
-.heading h1, .heading h2
+.title h1, .title h2
 {
     letter-spacing: 1.2px;
 }
@@ -180,7 +191,77 @@ i
 {
     border-bottom: 1.5px solid #008080;
 }
+.green-divider
+{
+    width: 80%;
+    height: 2px;
+    background: #008080;
+    margin: 0 auto 20px auto;
+}
+.heading i
+{
+    color: #008080;
+    font-size: 35px;
+    margin-right: 20px;
+}
+.heading h2
+{
+    color: #008080;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 60px;
+    
+}
+#info
+{
+    width: 65%;
+    background-color: #e7f3f3;
+}
+#info-container
+{
+    height: 50%;
+    padding: 0 60px 0 60px;
+    display: flex;
+    flex-direction: column;
+}
 
+.date i
+{
+    font-size: 8px;
+    color: #008080;
+    margin-right: 10px;
+}
+.selected i
+{
+    font-size: 16px;
+    color: #008080;
+    margin-right: 10px;
+}
+.date
+{
+    max-width: 40%;
+    min-width: 40%;
+    text-align: left;
+    float: left;
+    margin-bottom: 20px;
+}
+.date p
+{
+    font-weight: bold;
+}
+.info-content
+{
+    max-width: 60%;
+    min-width: 60%;
+    float: right;
+    text-align: left;
+}
+.info-content h2
+{
+    font-weight: bold;
+    font-size: 22px;
+}
 
 /* FOOTER */
 
