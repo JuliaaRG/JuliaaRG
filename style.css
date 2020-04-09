@@ -60,6 +60,7 @@ h1,h2,h3,h4,h5,h6,p,a
     #info
     {
         display: flex;
+        min-width: 100%;
     }
     .heading
     {
@@ -69,6 +70,11 @@ h1,h2,h3,h4,h5,h6,p,a
     .heading i
     {
         font-size: 20px;
+        margin-right: 15px;
+    }
+    .heading h2
+    {
+        font-size: 18px;
     }
     #about-block
     {
@@ -80,14 +86,14 @@ h1,h2,h3,h4,h5,h6,p,a
         min-height: 20%;
         max-height: 20%;
     }
-    .heading h2
-    {
-        font-size: 20px;
-    }
     .date
     {
         max-width: 50%;
         min-width: 50%;
+    }
+    .info-content > h2 , .info-content > h3
+    {
+        font-size: 18px !important;
     }
     .references1
     {
