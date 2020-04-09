@@ -80,6 +80,23 @@ h1,h2,h3,h4,h5,h6,p,a
         min-height: 20%;
         max-height: 20%;
     }
+    .heading h2
+    {
+        font-size: 20px;
+    }
+    .date
+    {
+        max-width: 50%;
+        min-width: 50%;
+    }
+    .references1
+    {
+        margin: auto;
+    }
+    .references2
+    {
+        margin-right: 70px;
+    }
  
 }
 
@@ -296,7 +313,7 @@ i
 .references2
 {
     float: right;
-    margin-left: 90px;
+    margin-left: 65px;
 }
 .references1 h2, .references2 h2
 {
