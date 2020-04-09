@@ -14,10 +14,7 @@ h1,h2,h3,h4,h5,h6,p,a
     letter-spacing: 1px;
     font-weight: 300;
 }
-.about p
-{
-    text-align: justify;
-}
+
 #contenu
 {
     display: flex;
@@ -28,9 +25,11 @@ h1,h2,h3,h4,h5,h6,p,a
 
 #about-block
 {
-    min-height: 60%;
-    max-height: 60%;
+    min-height: 63%;
+    max-height: 63%;
 }
+
+
 
 /* RESPONSIVE RULES*/
 
@@ -55,6 +54,8 @@ h1,h2,h3,h4,h5,h6,p,a
     {
         min-width: 100%;
         width: auto;
+        display: flex;
+        flex-direction: column;
     }
     #info
     {
@@ -64,6 +65,20 @@ h1,h2,h3,h4,h5,h6,p,a
     {
         margin: auto;
         justify-content: center;
+    }
+    .heading i
+    {
+        font-size: 20px;
+    }
+    #about-block
+    {
+        min-height: 50%;
+        max-height: 50%;
+    }
+    #hobby-block
+    {
+        min-height: 20%;
+        max-height: 20%;
     }
  
 }
@@ -118,25 +133,24 @@ i
     margin-right: 5px;
 }
 
-.contact
-{
-    flex: 1 1 0;
-}
+
 .contact h4
 {
     margin-left: 30px;
 }
 
+
+
+
 /* SIDEBAR ABOUT*/
 
-.about
-{
-    flex: 2 1 0;
-}
+
 .about p
 {
+    text-align: justify;
     margin: 30px 30px auto 30px;
 }
+
 
 
 /* SIDEBAR HOBBIES */
@@ -146,10 +160,7 @@ i
     display: flex;
     justify-content: center;
 }
-.hobbies
-{
-    flex: 1 1 0;
-}
+
 .hobby-icon
 {
     display: block;
@@ -161,7 +172,22 @@ i
     border-radius: 100%;
 }
 
+
+
 /* MAIN CONTENT*/
+
+#info
+{
+    width: 65%;
+    background-color: #e7f3f3;
+}
+#info-container
+{
+    height: 50%;
+    padding: 0 60px 0 60px;
+    display: flex;
+    flex-direction: column;
+}
 
 .title
 {
@@ -201,7 +227,7 @@ i
 .heading i
 {
     color: #008080;
-    font-size: 35px;
+    font-size: 32px;
     margin-right: 20px;
 }
 .heading h2
@@ -210,22 +236,8 @@ i
     text-transform: uppercase;
     font-weight: bold;
     text-align: left;
-    margin-left: 60px;
-    
+    margin-left: 60px;   
 }
-#info
-{
-    width: 65%;
-    background-color: #e7f3f3;
-}
-#info-container
-{
-    height: 50%;
-    padding: 0 60px 0 60px;
-    display: flex;
-    flex-direction: column;
-}
-
 .date i
 {
     font-size: 8px;
@@ -263,12 +275,40 @@ i
     font-size: 22px;
 }
 
-/* FOOTER */
 
-.footer 
+/* REFERENCES */
+
+.reference-block
 {
-	position: absolute;
-	width: 750px;
-	bottom: 0;
-	left: 10px;
+    min-width: 100%;
+    max-width: 100%;
 }
+.references
+{
+    display: flex;
+    flex-direction: row;
+}
+.references1
+{
+    float: left;
+    margin-left: 60px;
+}
+.references2
+{
+    float: right;
+    margin-left: 90px;
+}
+.references1 h2, .references2 h2
+{
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.references1 p , .references2 p
+{
+    font-size: 14px;
+    margin-bottom: 100px;
+}
+
+
