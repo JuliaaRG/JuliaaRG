@@ -81,7 +81,7 @@ h1,h2,h3,h4,h5,h6,p,a,table
         margin-right: 5px;
         margin-left: -15px;
     }
-    .heading h2
+    #info .heading h2
     {
         font-size: 18px;
     }
